@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muttahar & Laiba | Wedding Invitation</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#bba171', /* Elegant Gold */
+                        dark: '#1a1a1a',    /* Charcoal */
+                        light: '#faf9f7',   /* Off-white */
+                        surface: '#ffffff',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Parallax Hero Background */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=2070&auto=format&fit=crop');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /* Fade In Animation */
+        .fade-in {
+            animation: fadeIn 2s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Subtle spin for the music icon when playing */
+        .spin-slow {
+            animation: spin 4s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-light text-dark font-sans antialiased overflow-hidden" id="body-container">
+
+    <div id="entrance-screen" class="fixed inset-0 z-[100] bg-light flex flex-col items-center justify-center transition-opacity duration-1000 ease-in-out">
+
+        <div class="text-center fade-in" style="animation-delay: 0.2s;">
+
+
+            <h1 class="font-serif text-5xl md:text-7xl mb-8 text-dark tracking-widest">M <span class="text-primary italic">&</span> L</h1>
+            <p class="uppercase tracking-[0.2em] text-xs text-gray-500 mb-10">April 24 & 26, 2026</p>
+            
+            <button id="enter-btn" class="border border-dark text-dark px-8 py-3 text-sm uppercase tracking-widest hover:bg-dark hover:text-white transition-colors duration-300 flex items-center gap-3 mx-auto">
+                <i class="ph ph-envelope-open text-xl"></i>
+                Open Invitation
+            </button>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="wedding-background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-control" class="fixed bottom-6 right-6 z-50 bg-white/90 backdrop-blur-md p-4 rounded-full shadow-lg border border-gray-100 text-primary hover:scale-105 transition-all duration-300 opacity-0 pointer-events-none">
+        <i id="music-icon" class="ph-fill ph-record text-3xl spin-slow"></i>
+    </button>
+
+
+    <section class="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        
+        <video 
+            autoplay 
+            muted 
+            loop 
+            playsinline 
+            class="w-full h-full object-cover">
+            <source src="hero-video-BkP1eoiB.mp4" type="video/mp4">
+            <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=2070" alt="Wedding Background">
+        </video>
+    </div>
+
+    <div class="relative z-20">
+        <p class="text-white/80 uppercase tracking-[0.4em] mb-4 text-xs md:text-sm">We invite you to wedding celebration</p>
+        <h1 class="text-white font-serif text-6xl md:text-8xl mb-4 tracking-wider leading-tight">
+            Capt. Dr. Muttahar <br>
+            <span class="text-primary italic text-5xl md:text-7xl">&</span> <br>
+            Laiba
+        </h1>
+        <div class="w-16 h-[1px] bg-primary mx-auto my-6"></div>
+        <p class="text-white uppercase tracking-[0.2em] text-sm md:text-base">April 24 & 26, 2026</p>
+    </div>
+    
+    <div class="absolute bottom-10 animate-bounce text-white/70 z-20">
+        <i class="ph ph-caret-down text-3xl"></i>
+    </div>
+</section>
+
+    
+
+
+
+    <section class="py-20 bg-light text-center px-4">
+        <section class="relative py-20 bg-light border-t border-gray-100/50">
+    
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <img 
+            src="imgi_6_floral-vase-6x28LN74.png" 
+            class="h-32 md:h-40 object-contain  opacity-80" 
+            alt="Wedding Celebration Icon">
+    </div>
+
+</section>
+        <div class="max-w-3xl mx-auto">
+            <i class="ph-fill ph-quotes text-4xl text-primary/30 mb-6"></i>
+            <h2 class="font-serif italic text-2xl md:text-3xl leading-relaxed text-gray-700">
+                "And we created you in pairs."
+            </h2>
+            <p class="mt-6 uppercase tracking-widest text-xs text-gray-400">Surah An-Naba (78:8)</p>
+        </div>
+    </section>
+
+
+
+
+    <section class="relative py-28 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img 
+            src="white-textured-paper-KasY8RAJ.png" 
+            class="w-full h-full object-cover" 
+            alt="Wedding Decor"
+        >
+        
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+        <h2 class="font-serif italic text-5xl md:text-7xl leading-relaxed text-primary">Countdown</h2>
+        <p class="mt-6 uppercase tracking-widest text-xs text-gray-700">Until 24 April, 2026</p>
+        
+        <div id="countdown" class="flex justify-center gap-6 md:gap-12 font-serif">
+            <div class="flex flex-col items-center">
+                <span id="days" class="text-4xl md:text-7xl text-primary mb-2 ">00</span>
+                <span class="text-xs uppercase tracking-[0.2em] text-black-300 font-sans">Days</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span id="hours" class="text-4xl md:text-7xl text-primary mb-2 ">00</span>
+                <span class="text-xs uppercase tracking-[0.2em] text-black-300 font-sans">Hrs</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span id="minutes" class="text-4xl md:text-7xl text-primary mb-2 ">00</span>
+                <span class="text-xs uppercase tracking-[0.2em] text-black-300 font-sans">Mins</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span id="seconds" class="text-4xl md:text-7xl text-primary mb-2 ">00</span>
+                <span class="text-xs uppercase tracking-[0.2em] text-black-300 font-sans">Secs</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="py-24 bg-light">
+        <section class="relative py-20 bg-light border-t border-gray-100/50">
+    
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <img 
+            src="imgi_7_venue-hedsor-DSq2yQw3.png" 
+            class="h-32 md:h-40 object-contain  opacity-80" 
+            alt="Wedding Celebration Icon">
+    </div>
+
+</section>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl md:text-4xl uppercase tracking-widest mb-4">When & Where</h2>
+                <div class="w-16 h-[1px] bg-primary mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-surface p-12 text-center shadow-sm border border-gray-100 flex flex-col h-full">
+                    <i class="ph-light ph-church text-5xl text-primary mb-6 mx-auto"></i>
+                    <h3 class="font-serif text-2xl uppercase tracking-widest mb-2">Barat</h3>
+                    <p class="text-gray-500 mb-6 font-serif italic">12:00 PM</p>
+                    <div class="flex-grow">
+                        <p class="font-bold text-lg mb-2">Grand Vista Marquee</p>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-8">
+                            Main GT Rd, adjacent Tehzeeb Bakery<br>Wah Cantt, 47044, Pakistan
+                        </p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/9dtr7Xe6WJcUuzk77" 
+   target="_blank" 
+   class="inline-block border border-dark px-8 py-3 text-xs uppercase tracking-widest hover:bg-dark hover:text-white transition-colors duration-300">
+    View on Map
+</a>
+                </div>
+
+                <div class="bg-surface p-12 text-center shadow-sm border border-gray-100 flex flex-col h-full">
+                    <i class="ph-light ph-martini text-5xl text-primary mb-6 mx-auto"></i>
+                    <h3 class="font-serif text-2xl uppercase tracking-widest mb-2">Walima</h3>
+                    <p class="text-gray-500 mb-6 font-serif italic">12:00 PM</p>
+                    <div class="flex-grow">
+                        <p class="font-bold text-lg mb-2">Viva La Vida</p>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-8">
+                            Garrison Golf & Country Club Hall Number 5<br>Saddar Cantt, Airport, Road, Lahore
+                        </p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/e6xrVbLpNncoK58J8" 
+   target="_blank" 
+   class="inline-block border border-dark px-8 py-3 text-xs uppercase tracking-widest hover:bg-dark hover:text-white transition-colors duration-300">
+    View on Map
+</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<section class="py-24 bg-dark text-white">
+    <section class="relative py-20  ">
+    
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <img 
+            src="imgi_8_champagne-tower-Or6MBjHQ.png" 
+            class="h-32 md:h-40 object-contain  opacity-100" 
+            alt="Wedding Celebration Icon">
+    </div>
+
+</section>
+    <div class="max-w-5xl mx-auto px-4">
+        <div class="text-center mb-20">
+            <h2 class="font-serif text-5xl md:text-6xl text-primary italic mb-4">Event Programme</h2>
+            <p class="uppercase tracking-[0.3em] text-xs text-gray-400">The Celebration Schedule</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-16 relative">
+            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-primary/30 -translate-x-1/2"></div>
+
+            <div class="relative space-y-12 text-center md:text-right pr-0 md:pr-12">
+                <div class="mb-10">
+                    <h3 class="font-serif text-3xl text-primary uppercase tracking-widest">The Barat</h3>
+                    <p class="text-gray-400 font-serif italic">Friday, 24 April 2026</p>
+                </div>
+
+                <div class="relative">
+                    <p class="text-primary font-bold tracking-widest mb-1">12:00 PM</p>
+                    <p class="uppercase tracking-widest text-sm text-gray-200">The Welcome</p>
+                    <div class="hidden md:block absolute -right-[53px] top-2 w-3 h-3 bg-primary rounded-full border-4 border-dark"></div>
+                </div>
+
+                <div class="relative">
+                    <p class="text-primary font-bold tracking-widest mb-1">01:00 PM</p>
+                    <p class="uppercase tracking-widest text-sm text-gray-200">Grand Entrance & Seating</p>
+                    <div class="hidden md:block absolute -right-[53px] top-2 w-3 h-3 bg-primary rounded-full border-4 border-dark"></div>
+                </div>
+
+                <div class="relative">
+                    <p class="text-primary font-bold tracking-widest mb-1">02:30 PM</p>
+                    <p class="uppercase tracking-widest text-sm text-gray-200">Festive Dinner & Greetings</p>
+                    <div class="hidden md:block absolute -right-[53px] top-2 w-3 h-3 bg-primary rounded-full border-4 border-dark"></div>
+                </div>
+
+                <div class="relative">
+                    <p class="text-primary font-bold tracking-widest mb-1">04:00 PM</p>
+                    <p class="uppercase tracking-widest text-sm text-gray-200">Rukhsati</p>
+                    <div class="hidden md:block absolute -right-[53px] top-2 w-3 h-3 bg-primary rounded-full border-4 border-dark"></div>
+                </div>
+            </div>
+
+            <div class="relative space-y-12 text-center md:text-left pl-0 md:pl-12">
+                <div class="mb-10">
+                    <h3 class="font-serif text-3xl text-primary uppercase tracking-widest">The Walima</h3>
+                    <p class="text-gray-400 font-serif italic">Sunday, 26 April 2026</p>
+                </div>
+
+                <div class="relative">
+                    <p class="text-primary font-bold tracking-widest mb-1">12:30 PM</p>
+                    <p class="uppercase tracking-widest text-sm text-gray-200">Welcome Drinks</p>
+                    <div class="hidden md:block absolute -left-[53px] top-2 w-3 h-3 bg-primary rounded-full border-4 border-dark"></div>
+                </div>
+
+                <div class="relative">
+                    <p class="text-primary font-bold tracking-widest mb-1">01:30 PM</p>
+                    <p class="uppercase tracking-widest text-sm text-gray-200">Reception & Photos</p>
+                    <div class="hidden md:block absolute -left-[53px] top-2 w-3 h-3 bg-primary rounded-full border-4 border-dark"></div>
+                </div>
+
+                <div class="relative">
+                    <p class="text-primary font-bold tracking-widest mb-1">03:00</p>
+                    <p class="uppercase tracking-widest text-sm text-gray-200">Lunch</p>
+                    <div class="hidden md:block absolute -left-[53px] top-2 w-3 h-3 bg-primary rounded-full border-4 border-dark"></div>
+                </div>
+
+                <div class="relative">
+                    <p class="text-primary font-bold tracking-widest mb-1">04:00</p>
+                    <p class="uppercase tracking-widest text-sm text-gray-200">Closing Ceremony</p>
+                    <div class="hidden md:block absolute -left-[53px] top-2 w-3 h-3 bg-primary rounded-full border-4 border-dark"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+   
+
+ 
+
+    <section class="py-32 bg-[#faf9f7] relative flex justify-center items-center overflow-hidden">
+        
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#c2a878]/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#c2a878]/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-3xl w-full mx-auto px-4 relative z-10">
+            
+            <div class="bg-white p-2 md:p-3 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] rounded-sm">
+                <div class="border border-[#c2a878]/30 p-8 md:p-16 relative">
+                    
+                    <div class="flex justify-center mb-8">
+                        <svg class="w-16 h-16 text-[#c2a878] opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5">
+                            <path d="M12 2C12 2 14 6 18 6C18 10 12 14 12 14C12 14 6 10 6 6C10 6 12 2 12 2Z" fill="currentColor" fill-opacity="0.1"/>
+                            <path d="M12 14C12 14 15 17 15 21C11 21 12 14 12 14Z" />
+                            <path d="M12 14C12 14 9 17 9 21C13 21 12 14 12 14Z" />
+                        </svg>
+                    </div>
+
+                    <div class="text-center mb-12">
+                        <h2 class="font-serif text-4xl md:text-5xl uppercase tracking-[0.15em] mb-4 text-[#1a1a1a]">RSVP</h2>
+                        <p class="text-gray-400 font-serif italic text-lg tracking-wide">Kindly reply by April 22, 2026</p>
+                    </div>
+
+                    <form action="#" method="POST" class="space-y-10 max-w-xl mx-auto">
+                        
+                        <div class="relative z-0 w-full group">
+                            <input type="text" name="name" id="name" class="block py-3 px-0 w-full text-lg text-gray-800 bg-transparent border-0 border-b border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-[#c2a878] peer transition-colors duration-300" placeholder=" " required />
+                            <label for="name" class="peer-focus:font-medium absolute text-sm text-gray-400 uppercase tracking-widest duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#c2a878] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Full Name(s)</label>
+                        </div>
+
+                        <div class="pt-2">
+                            <p class="text-xs uppercase tracking-widest text-gray-400 mb-5 text-center">Will you be joining us?</p>
+                            <div class="grid grid-cols-2 gap-4 md:gap-6">
+                                <label class="cursor-pointer group">
+                                    <input type="radio" name="attendance" value="yes" class="peer hidden" required>
+                                    <div class="h-full border border-gray-200 p-5 text-center transition-all duration-500 peer-checked:border-[#c2a878] peer-checked:bg-[#c2a878]/5 group-hover:border-[#c2a878]/50 flex flex-col items-center justify-center">
+                                        <i class="ph-light ph-envelope-open text-2xl mb-3 text-gray-400 peer-checked:text-[#c2a878] transition-colors"></i>
+                                        <span class="uppercase tracking-widest text-xs md:text-sm font-medium text-gray-500 peer-checked:text-[#c2a878] transition-colors">Joyfully Accept</span>
+                                    </div>
+                                </label>
+                                
+                                <label class="cursor-pointer group">
+                                    <input type="radio" name="attendance" value="no" class="peer hidden">
+                                    <div class="h-full border border-gray-200 p-5 text-center transition-all duration-500 peer-checked:border-[#1a1a1a] peer-checked:bg-[#1a1a1a]/5 group-hover:border-gray-400 flex flex-col items-center justify-center">
+                                        <i class="ph-light ph-envelope text-2xl mb-3 text-gray-400 peer-checked:text-[#1a1a1a] transition-colors"></i>
+                                        <span class="uppercase tracking-widest text-xs md:text-sm font-medium text-gray-500 peer-checked:text-[#1a1a1a] transition-colors">Regretfully Decline</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="relative z-0 w-full group pt-4">
+                            <select name="guests" id="guests" class="block py-3 px-0 w-full text-lg text-gray-800 bg-transparent border-0 border-b border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-[#c2a878] peer transition-colors duration-300 cursor-pointer">
+                                <option value="" disabled selected></option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="4">5 People</option>
+                                <option value="4">6 People</option>
+                                <option value="4">7 People</option>
+                            </select>
+                            <label for="guests" class="peer-focus:font-medium absolute text-sm text-gray-400 uppercase tracking-widest duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#c2a878] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Number of Guests</label>
+                            <div class="absolute right-0 top-4 text-gray-400 pointer-events-none peer-focus:text-[#c2a878] transition-colors">
+                                <i class="ph ph-caret-down"></i>
+                            </div>
+                        </div>
+
+                        <div class="relative z-0 w-full group pt-4">
+                            <textarea name="notes" id="notes" rows="1" class="block py-3 px-0 w-full text-lg text-gray-800 bg-transparent border-0 border-b border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-[#c2a878] peer transition-colors duration-300 resize-none" placeholder=" "></textarea>
+                            <label for="notes" class="peer-focus:font-medium absolute text-sm text-gray-400 uppercase tracking-widest duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#c2a878] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
+                        </div>
+
+                        <div class="pt-10 text-center">
+                            <button type="submit" class="group relative inline-flex items-center justify-center px-12 py-4 text-sm tracking-[0.25em] text-white uppercase bg-[#c2a878] overflow-hidden transition-all duration-500 hover:bg-[#c2a878]">
+                                <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-10"></span>
+                                <span class="relative flex items-center gap-3">
+                                    Confirm Details
+                                    <i class="ph-light ph-arrow-right group-hover:translate-x-1 transition-transform duration-300"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-dark py-16 text-center text-white">
+        <section class="relative py-20 ">
+    
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <img 
+            src="imgi_22_swans-framed-ByH4RE7t.png" 
+            class="h-32 md:h-40 object-contain  opacity-80" 
+            alt="Wedding Celebration Icon">
+    </div>
+
+</section>
+        <h2 class="font-serif text-4xl mb-4 text-primary">M & L</h2>
+        <p class="uppercase tracking-widest text-xs text-gray-400 mb-8">Capt.Dr.Muttahar And Laiba</p>
+    </footer>
+
+    <script>
+        // 1. Loading Screen & Music Logic
+        const entranceScreen = document.getElementById('entrance-screen');
+        const enterBtn = document.getElementById('enter-btn');
+        const bodyContainer = document.getElementById('body-container');
+        const bgMusic = document.getElementById('bg-music');
+        const musicControl = document.getElementById('music-control');
+        const musicIcon = document.getElementById('music-icon');
+        let isPlaying = false;
+
+        // When "Open Invitation" is clicked
+        enterBtn.addEventListener('click', () => {
+            // Fade out the preloader
+            entranceScreen.style.opacity = '0';
+            
+            // Allow scrolling again
+            bodyContainer.classList.remove('overflow-hidden');
+
+            // Play the audio
+            bgMusic.play();
+            isPlaying = true;
+
+            // Reveal the floating music button
+            musicControl.classList.remove('opacity-0', 'pointer-events-none');
+
+            // Remove entrance screen from DOM after fade animation completes
+            setTimeout(() => {
+                entranceScreen.style.display = 'none';
+            }, 1000);
+        });
+
+        // Toggle music play/pause
+        musicControl.addEventListener('click', () => {
+            if (isPlaying) {
+                bgMusic.pause();
+                musicIcon.classList.remove('spin-slow');
+                musicIcon.className = "ph-fill ph-speaker-slash text-3xl"; // Crossed out speaker icon
+            } else {
+                bgMusic.play();
+                musicIcon.className = "ph-fill ph-record text-3xl spin-slow"; // Spinning record icon
+            }
+            isPlaying = !isPlaying;
+        });
+
+        // 2. Countdown Logic
+        const countDownDate = new Date("Apr 24, 2026 16:00:00").getTime();
+        const countdownTimer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                document.getElementById("countdown").innerHTML = "<div class='text-2xl font-serif text-primary'>Today is the day!</div>";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
